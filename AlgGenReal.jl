@@ -14,7 +14,7 @@ function AlgGenOptimization(dimension)
                 println("selecao: $sel")
                 println("mutacao: $mut")
                 println("crossover: $cros")
-                result = Evolutionary.optimize(x -> levy(x), ones(dimension),
+                result = Evolutionary.optimize(x -> levy(x), zeros(dimension),
                                                 GA(populationSize = 100,
                                                 selection = sel,
                                                 crossover = cros,
