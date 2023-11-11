@@ -26,4 +26,7 @@ function AlgGenOptimization(dimension)
     end
 end
 
-print(AlgGenOptimization(16))
+dimensao = [16, 24, 32, 64]
+for dim in dimensao
+    AlgGenOptimization(dim)
+end
