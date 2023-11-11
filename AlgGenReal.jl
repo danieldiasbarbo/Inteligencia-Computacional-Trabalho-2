@@ -21,6 +21,15 @@ function AlgGenOptimization(dimension)
                                                 mutation = mut[1]))
                 println(result)
                 println("===================================================================")
+                println("selecao: Torneio")
+                println("mutacao: $(mut[2])")
+                println("crossover: $cros")
+                result = Evolutionary.optimize(x -> levy(x), zeros(dimension),
+                                                GA(populationSize = 100,
+                                                crossover = cros,
+                                                mutation = mut[1]))
+                println(result)
+                println("===================================================================")
             end
         end
     end
