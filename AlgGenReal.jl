@@ -14,7 +14,7 @@ function AlgGenOptimization(dimension)
                 println("selecao: $(sel[2])")
                 println("mutacao: $(mut[2])")
                 println("crossover: $(cros[2])")
-                result = Evolutionary.optimize(x -> rastrigin(x), ones(dimension),
+                result = Evolutionary.optimize(x -> rastrigin(x), zeros(dimension),
                                                 GA(populationSize = 100,
                                                 selection = sel[1],
                                                 crossover = cros[1],
@@ -24,7 +24,7 @@ function AlgGenOptimization(dimension)
                 println("selecao: torneio")
                 println("mutacao: $(mut[2])")
                 println("crossover: $(cros[2])")
-                result = Evolutionary.optimize(x -> rastrigin(x), ones(dimension),
+                result = Evolutionary.optimize(x -> rastrigin(x), zeros(dimension),
                                                 GA(populationSize = 100,
                                                 crossover = cros[1],
                                                 mutation = mut[1]))

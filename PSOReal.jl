@@ -5,7 +5,7 @@ function PSOOptimization(dimension)
     println("PSO DIMENSAO $dimension")
     println("===================================================================")
     f(x) = rastrigin(x)
-    bounds = boxconstraints(lb = -5.12ones(dimension), ub = 5.12ones(dimension))
+    bounds = boxconstraints(lb = -5.12zeros(dimension), ub = 5.12zeros(dimension))
     result = optimize(f, bounds, PSO())
     println(result)
 end
