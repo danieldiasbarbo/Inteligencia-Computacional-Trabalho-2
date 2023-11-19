@@ -5,7 +5,7 @@ using Evolutionary
 function AlgGenOptimization(dimension, intervalo)
     selection_methods = [(Evolutionary.rouletteinv, "roleta")]
     mutation_methods = [(Evolutionary.gaussian(), "gaussiano"), (Evolutionary.uniform(), "uniforme")]
-    crossover_methods = [(Evolutionary.DC, "DC texto"), (Evolutionary.AX, "AX texto"), (Evolutionary.UX, "uniforme")]
+    crossover_methods = [(Evolutionary.DC, "inverso"), (Evolutionary.AX, "aritmético"), (Evolutionary.UX, "uniforme")]
 
     conjunto_inicial = gerar_conjunto_inicial_rastring(dimension, intervalo[1], intervalo[2])
 
