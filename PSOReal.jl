@@ -1,11 +1,11 @@
 using Metaheuristics
-include("levy.jl")
+include("Rastrigin.jl")
 
 function PSOOptimization(dimension)
     println("PSO DIMENSAO $dimension")
     println("===================================================================")
-    f(x) = levy(x)
-    bounds = boxconstraints(lb = -5ones(dimension), ub = 5ones(dimension))
+    f(x) = rastrigin(x)
+    bounds = boxconstraints(lb = -5.12ones(dimension), ub = 5.12ones(dimension))
     result = optimize(f, bounds, PSO())
     println(result)
 end
