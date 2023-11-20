@@ -1,3 +1,6 @@
+# Aluno 01: Daniel Dias Barbosa - 12111BCC051
+# Aluno 02: Huryel Souto Costa - 12011BCC022
+
 function gerar_conjunto_inicial_rastring(qtd_numeros, minimo, maximo)
     # Inicializa um vetor vazio para armazenar os números aleatórios
     vetor_aleatorio = Float64[]

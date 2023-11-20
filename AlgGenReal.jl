@@ -1,3 +1,7 @@
+# Aluno 01: Daniel Dias Barbosa - 12111BCC051
+# Aluno 02: Huryel Souto Costa - 12011BCC022
+
+
 include("Rastrigin.jl")
 include("Conjunto_Inicial.jl")
 using Evolutionary
